@@ -1,7 +1,7 @@
 var canvas = document.querySelector(".canvas");
 var pressedKey; // the key you press
 var playerhit = false; // check if player hited the ball
-var score = 700; //game score
+var score = 0; //game score
 var random = 0; //random number from 0-9
 var counter = 10; //just a counter
 var scoreincrease = 1; //justscoreincrease
