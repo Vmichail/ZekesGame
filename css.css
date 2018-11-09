@@ -1,105 +1,105 @@
 .canvas {
-	border: 8px outset darkolivegreen;
-	background-color: goldenrod;
+  border: 8px outset darkolivegreen;
+  background-color: goldenrod;
 }
 .body {
-	margin: 0;
-	background-color: darkgreen;
+  margin: 0;
+  background-color: darkgreen;
 }
 .score {
-	position: absolute;
-    top: 0px;
-    right: 0;
-	border: 8px outset darkorange;
-	text-align: center;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  border: 8px outset darkorange;
+  text-align: center;
 }
 .leaderboard {
-	color: blue;
-	position: absolute;
-    top: 0px;
-    right: 0;
-	border: 8px outset darkorange;
-	text-align: center;
+  color: blue;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  border: 8px outset darkorange;
+  text-align: center;
 }
 .table {
-	margin: auto;
-    width: 50%;
-	font-size: 25px;
-	text-align: center;
-	border-style: dashed;
-	border: 2px solid black;	
+  margin: auto;
+  width: 50%;
+  font-size: 25px;
+  text-align: center;
+  border-style: dashed;
+  border: 2px solid black;
 }
 .table td th {
-	text-align: center;
+  text-align: center;
 }
 /*Instructions */
 #instructions {
-	border: 8px outset darkorange;
-	text-align: center;
-	color: black;
+  border: 8px outset darkorange;
+  text-align: center;
+  color: black;
 }
 /*Instructions text1= */
 .instuctions text1 {
-	font-size: 40px;
+  font-size: 40px;
 }
 /*Instructions text3=*/
 .instuctions text2 {
-	font-size: 20px;
+  font-size: 20px;
 }
 /*start game */
-.startGame{
-	position: absolute;
-	border: 8px outset black;
-	width: 100px;
-	top: 50px;
-	left: 100px;
-	background-color: darkgreen;
+.startGame {
+  position: absolute;
+  border: 8px outset black;
+  width: 100px;
+  top: 50px;
+  left: 100px;
+  background-color: darkgreen;
 }
 /*Start game message */
 .text3 {
-	color: darkblue;
-	font-size: 85px;
-	margin-top: 0;
-	margin-bottom: 0;
-	text-align: center;
+  color: darkblue;
+  font-size: 85px;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
 }
 .text4 {
-	color: darkblue;
-	font-size: 55px;
-	margin-top: 0;
-	margin-bottom: 0;
-	text-align: center;
+  color: darkblue;
+  font-size: 55px;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
 }
 /*button start game*/
 .text5 {
-	color: darkblue;
-	font-size: 30px;
-	margin-top: 0;
-	margin-bottom: 0;
-	text-align: center;
+  color: darkblue;
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
 }
 .button1 {
-	border: 8px outset darkorange;
-	cursor: pointer;
-	margin-bottom: 0px;
-	text-align: center;
+  border: 8px outset darkorange;
+  cursor: pointer;
+  margin-bottom: 0px;
+  text-align: center;
 }
 .button {
-	color: darkblue;
-	margin: 10px;
-	font-size: 30px;
+  color: darkblue;
+  margin: 10px;
+  font-size: 30px;
 }
 .button1:hover {
-	background-color: aqua;
-	color: black;
+  background-color: aqua;
+  color: black;
 }
 .center {
-	text-align: center;
+  text-align: center;
 }
 .input {
-	margin-top: 10px;
-	width: 95%;
-	height: 70px;
-	font-size:50px;
-	text-align: center;
+  margin-top: 10px;
+  width: 95%;
+  height: 70px;
+  font-size: 50px;
+  text-align: center;
 }

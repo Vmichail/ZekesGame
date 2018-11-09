@@ -1,98 +1,95 @@
 <!DOCTYPE <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Canvas Game</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" media="screen" href="css.css" />
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-</head>
-<body class="body">
-	<canvas class="canvas"></canvas>
-	<div class="score">
-	<h1>Score</h1>
-	<h1 id = "scorenumber">0</h1>
-	</div>
-	<!-- Leaderboard -->
-	<div class="leaderboard">
-	<h1>Leaderboard</h1>
-	<table class="table">
-		<tr>
-			<th>Username</th>
-			<th>Score</th>
-		</tr>
-		<tr id="1">
-			<td id="firstName">Loading..</td>
-			<td id="firstScore">Loarding..</td>
-		</tr>
-		<tr id="2">
-				<td id="secondName">Loading..</td>
-				<td id="secondScore">Loading</td>
-		</tr>
-		<tr id="3">
-				<td id="thirdName">Loading..</td>
-				<td id="thirdScore">Loading..</td>
-		</tr>
-		<tr id="4">
-				<td id="forthName">Loading..</td>
-				<td id="forthScore">Loading..</td>
-			</tr>
-		<tr id="5">
-				<td id="fifthName">Loading..</td>
-				<td id="fifthScore">Loading..</td>
-		</tr>
-	</table>
-	</div>
-	<!-- Leaderboard ends-->
-	<!-- Instructions -->
-	<div id="instructions">
-			<p class="text1">Instuctions</p>
-			<p class="text2">Press 'w' to move up and 's' to move down</p>
-		</div>
-	<!-- Instructions ends -->
-	<!-- You lose border starts -->
-	<div class="startGame" id="border">
-		<div class="Contex" id="lost">
-		<p class="text3">You lost</p>
-		<p class="text4">Score:<u id="score">0</u></p>
-		<div class="button1">
-		<p class="button" onclick="hideAll()">Playagain</p>
-		</div>
-		<div class="button1">
-			<p class="button" onclick="saveGame()">Save Score</p>
-			</div>
-		</div>
-	<!-- You lose border ends -->
-	<!-- Startgame border -->
-	<div class="Contex" id="start">
-		<p class="text3">Welcome</p>
-		<p class="text4">V 0.71</p>
-		<div class="button1">
-		<p class="button" onclick="startGame()">Start</p>
-		</div>
-		<div class="button1">
-			<p class="button">Coming soon...</p>
-			</div>
-		</div>
-	<!-- Startgame border ends -->
-	<!-- Save Score -->
-	<div class="Contex" id="save">
-			<p class="text5">Type your username</p>
-			<div class="center">
-			<input type="text" name="username" class="input">
-			</div>
-			<p class="text4"></p>
-			<div class="button1">
-			<p class="button" onclick="save()">Save</p>
-			</div>
-			<div class="button1">
-				<p class="button" onclick="back()">Back</p>
-				</div>
-			</div>
-		<!-- Save Score ends -->
-	</div>
-	<script src="canvas.js"></script>
-	<script src="style.js"></script>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Canvas Game</title>
+    <link rel="icon" href="favicon.png" type="image/png" sizes="32x32" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body class="body">
+    <canvas class="canvas"></canvas>
+    <div class="score">
+      <h1>Score</h1>
+      <h1 id="scorenumber">0</h1>
+    </div>
+    <!-- Leaderboard -->
+    <div class="leaderboard">
+      <h1>Leaderboard</h1>
+      <table class="table">
+        <tr>
+          <th>Username</th>
+          <th>Score</th>
+        </tr>
+        <tr id="1">
+          <td id="firstName">Loading..</td>
+          <td id="firstScore">Loarding..</td>
+        </tr>
+        <tr id="2">
+          <td id="secondName">Loading..</td>
+          <td id="secondScore">Loading..</td>
+        </tr>
+        <tr id="3">
+          <td id="thirdName">Loading..</td>
+          <td id="thirdScore">Loading..</td>
+        </tr>
+        <tr id="4">
+          <td id="forthName">Loading..</td>
+          <td id="forthScore">Loading..</td>
+        </tr>
+        <tr id="5">
+          <td id="fifthName">Loading..</td>
+          <td id="fifthScore">Loading..</td>
+        </tr>
+      </table>
+    </div>
+    <!-- Leaderboard ends -->
+    <!-- Instructions -->
+    <div id="instructions">
+      <h3 class="text1">Instuctions</h3>
+      <p class="text2">Press 'w' to move up and 's' to move down</p>
+      <p class="text2">The ball speed increases as time passes</p>
+      <p class="text2">The ball diamensions get smaller as time passes</p>
+    </div>
+    <!-- Instructions ends -->
+    <!-- You lose border starts -->
+    <div class="startGame" id="border">
+      <div class="Contex" id="lost">
+        <p class="text3">You lost</p>
+        <p class="text4">Score:<u id="score">0</u></p>
+        <div class="button1">
+          <p class="button" onclick="hideAll()">Playagain</p>
+        </div>
+        <div class="button1">
+          <p class="button" onclick="saveGame()">Save Score</p>
+        </div>
+      </div>
+      <!-- You lose border ends -->
+      <!-- Startgame border -->
+      <div class="Contex" id="start">
+        <p class="text3">Welcome</p>
+        <p class="text4">V 0.71</p>
+        <div class="button1">
+          <p class="button" onclick="startGame()">Start</p>
+        </div>
+        <div class="button1"><p class="button">Coming soon...</p></div>
+      </div>
+      <!-- Startgame border ends -->
+      <!-- Save Score -->
+      <div class="Contex" id="save">
+        <p class="text5">Type your username</p>
+        <div class="center">
+          <input type="text" name="username" class="input" />
+        </div>
+        <p class="text4"></p>
+        <div class="button1"><p class="button" onclick="save()">Save</p></div>
+        <div class="button1"><p class="button" onclick="back()">Back</p></div>
+      </div>
+      <!-- Save Score ends -->
+    </div>
+    <script src="canvas.js"></script>
+    <script src="style.js"></script>
+  </body>
 </html>
