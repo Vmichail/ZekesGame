@@ -83,7 +83,7 @@ function updateDatabase() {
     }
   };
 
-  req.open("PUT", "http://api.jsonbin.io/b/5bc742b4adf9f5652a600a5a", true);
+  req.open("PUT", "https://api.jsonbin.io/b/5bc742b4adf9f5652a600a5a", true);
   req.setRequestHeader("Content-type", "application/json");
   req.send(myJSON);
 }
