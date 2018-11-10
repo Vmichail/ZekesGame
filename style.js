@@ -79,7 +79,7 @@ function updateDatabase() {
   req.onreadystatechange = () => {
     if (req.readyState == XMLHttpRequest.DONE) {
       console.log(req.responseText);
-      history.go(0);
+      //history.go(0);
     }
   };
 
