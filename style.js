@@ -150,7 +150,7 @@ function save() {
   console.log("InputName:" + inputname);
   for (i = 0; i < 5; i++) {
     if (score > players[i].score && done == false) {
-      counter = i + 1;
+      counter = i;
       for (j = 4; j > counter; j--) {
         players[j].username = players[j - 1].username;
         players[j].score = players[j - 1].score;

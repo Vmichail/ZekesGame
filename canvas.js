@@ -1,7 +1,7 @@
 var canvas = document.querySelector(".canvas");
 var pressedKey; // the key you press
 var playerhit = false; // check if player hited the ball
-var score = 0; //game score
+var score = 1120; //game score
 var random = 0; //random number from 0-9
 var counter = 10; //just a counter
 var scoreincrease = 1; //justscoreincrease
@@ -160,11 +160,20 @@ function circle() {
 //Move function player
 function move() {
   //console.log("You press arrow key");
-  if (pressedKey == "w" && pSH - dmovement > -20) {
+  if (
+    (pressedKey == "w" || pressedKey == "W" || pressedKey == "ς") &&
+    pSH - dmovement > -20
+  ) {
     movement = -55;
     pSH += movement;
     pEH = pSH + bH;
-  } else if (pressedKey == "s" && pEH + dmovement < windowHeight) {
+  } else if (
+    (pressedKey == "S" ||
+      pressedKey == "s" ||
+      pressedKey == "Σ" ||
+      pressedKey == "σ") &&
+    pEH + dmovement < windowHeight
+  ) {
     movement = 55;
     pSH += movement;
     pEH = pSH + bH;
