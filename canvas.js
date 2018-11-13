@@ -1,5 +1,6 @@
 var canvas = document.querySelector(".canvas");
 var pressedKey; // the key you press
+var pressedValue; //the value of the key you pressed
 var playerhit = false; // check if player hited the ball
 var score = 0; //game score
 var random = 0; //random number from 0-9
@@ -87,18 +88,17 @@ lost.style.display = "none"; //lost context starts hidden
 saveid.style.display = "none";
 //styl.js varaibbles moved above
 //if you press a key
-$(window).keypress(function(e) {
+$(window).keydown(function(e) {
   pressedKey = e.key;
-  //console.log("You pressed:"+pressedKey);
-  if (pressedKey === " ") {
+  pressedValue = e.which;
+  if (pressedKey === " " || pressedValue == 80) {
     StartStopScreen(e);
-  } else if (
-    pressedKey == "ArrowUp" ||
-    pressedKey == "ArrowDown" ||
-    pressedKey == "w" ||
-    pressedKey == "s"
-  ) {
+    return false;
+  } else {
     move(e);
+    if (pressedValue == 38 || pressedValue == 40) {
+      return false;
+    }
   }
 });
 //if you press a key ends
@@ -147,6 +147,7 @@ function circle() {
     console.log("PlayerStartingHeight:"+pSH+"\nPlayerStartingWidth:"+pSW+"\nPlayerEndingHeight:"+pEH+"\nPlayerEndingWidth:"+pEW);
     */
   } else if (cWL <= pEW && (cHB > pSH && cHT < pEH) && playerhit == false) {
+    console.log("Player hited");
     velocityX = -velocityX;
     //velocityY = -velocityY;
     playerhit = true;
@@ -161,7 +162,11 @@ function circle() {
 function move() {
   //console.log("You press arrow key");
   if (
-    (pressedKey == "w" || pressedKey == "W" || pressedKey == "ς") &&
+    (pressedKey == "w" ||
+      pressedKey == "W" ||
+      pressedKey == "ς" ||
+      pressedValue == 38 ||
+      pressedValue == 87) &&
     pSH - dmovement > -20
   ) {
     movement = -55;
@@ -171,7 +176,9 @@ function move() {
     (pressedKey == "S" ||
       pressedKey == "s" ||
       pressedKey == "Σ" ||
-      pressedKey == "σ") &&
+      pressedKey == "σ" ||
+      pressedValue == 40 ||
+      pressedValue == 83) &&
     pEH + dmovement < windowHeight
   ) {
     movement = 55;
