@@ -267,6 +267,7 @@ function refreshGame() {
 
 //initialize the starting values
 function initialize() {
+  scoreincrease = 1;
   playerhit = false; // check if player hited the ball
   score = 0; //game score
   stopAnimation = true;
